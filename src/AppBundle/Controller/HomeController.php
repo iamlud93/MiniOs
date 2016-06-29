@@ -24,6 +24,20 @@ class HomeController extends Controller
         ]);
     }
 
+    
+     public function testAction()
+    {
+        $nbrArticle = 25;
+        $marques = ['apple', 'samsung', 'intel'];
+        $produits = ['clef', 'lampe', 'stylo', 'gomme'];
+
+        return $this->render('Home/test.php', [
+            'nbrArticle' => $nbrArticle,
+            'marques'    => $marques,
+            'produits'   => $produits,
+        ]);
+    }
+
     public function articlesAction()
     {
         $pdo = $this->getPdo();

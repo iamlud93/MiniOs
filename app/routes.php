@@ -11,6 +11,12 @@ $routes = [
         'controller' => 'HomeController',
         'action'     => 'wikiAction',
     ],
+    'test'        => [
+        'url'        => '/test',
+        'controller' => 'HomeController',
+        'action'     => 'testAction',
+    ],  
+    
     'articles'         => [
         'url'        => '/articles',
         'controller' => 'HomeController',
@@ -26,4 +32,6 @@ $routes = [
         'controller' => 'SecurityController',
         'action'     => '404Action',
     ],
+
+
 ];
